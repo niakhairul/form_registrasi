@@ -26,7 +26,6 @@ class _FormPendaftaranScreenState extends State<FormPendaftaranScreen> {
           key: _formKey,
           child: ListView(
             children: [
-              // nama
               TextFormField(
                 controller: namaC,
                 decoration: const InputDecoration(labelText: "Nama"),
@@ -36,7 +35,6 @@ class _FormPendaftaranScreenState extends State<FormPendaftaranScreen> {
                 },
               ),
 
-              // email
               TextFormField(
                 controller: emailC,
                 decoration: const InputDecoration(labelText: "Email"),
@@ -47,7 +45,6 @@ class _FormPendaftaranScreenState extends State<FormPendaftaranScreen> {
                 },
               ),
 
-              // nomor telepon
               TextFormField(
                 controller: hpC,
                 decoration: const InputDecoration(labelText: "Nomor HP"),
@@ -59,7 +56,6 @@ class _FormPendaftaranScreenState extends State<FormPendaftaranScreen> {
                 },
               ),
 
-              // alamat
               TextFormField(
                 controller: alamatC,
                 decoration: const InputDecoration(labelText: "Alamat"),
@@ -69,7 +65,6 @@ class _FormPendaftaranScreenState extends State<FormPendaftaranScreen> {
                 },
               ),
 
-              // password
               TextFormField(
                 controller: passC,
                 decoration: const InputDecoration(labelText: "Password"),
@@ -87,7 +82,6 @@ class _FormPendaftaranScreenState extends State<FormPendaftaranScreen> {
                 child: const Text("DAFTAR"),
                 onPressed: (){
                   if(_formKey.currentState!.validate()){
-                    // setelah valid
                     ScaffoldMessenger.of(context).showSnackBar(
                       const SnackBar(content: Text("OK, semua valid!"))
                     );
